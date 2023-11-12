@@ -10,7 +10,6 @@ const Login = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -41,7 +40,7 @@ const Login = () => {
         });
 
       localStorage.setItem("userInfo", JSON.stringify(data.data));
-      setLoading(false);
+
       if (!data.data.isVerified) {
         navigate("/auth/verify");
       } else navigate("/chat");
@@ -83,7 +82,6 @@ const Login = () => {
           theme: "dark",
         });
       }
-      setLoading(false);
     }
   };
 
