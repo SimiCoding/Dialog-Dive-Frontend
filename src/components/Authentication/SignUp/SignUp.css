@@ -1,0 +1,274 @@
+.signUp {
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.signUpBox {
+  position: relative;
+  width: 69.98444790046656vh;
+
+  height: 85.53654743390358vh;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.5);
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.signUpBox h2 {
+  color: rgb(226, 226, 223);
+  text-shadow: 2px 2px black;
+  font-size: 5vh;
+  z-index: 2;
+  position: absolute;
+
+  bottom: 74.09449541284404vh;
+}
+
+.signUpBox p {
+  color: white;
+  z-index: 1;
+  position: absolute;
+
+  bottom: 72.31899529042386vh;
+  font-size: 4vh;
+}
+
+.signUpBox h3.signUp-email {
+  position: absolute;
+  z-index: 1;
+  color: white;
+
+  bottom: 52.703975535168196vh;
+  font-size: 4vh;
+}
+.signUpBox h3.signUp-name {
+  position: absolute;
+  z-index: 1;
+  color: white;
+
+  bottom: 66.703975535168196vh;
+  font-size: 4vh;
+}
+
+.signUpBox h3.signUp-password {
+  position: absolute;
+  z-index: 1;
+  color: white;
+
+  bottom: 38.134890965732086vh;
+  font-size: 4vh;
+}
+
+.signUpBox .signUpEmail {
+  z-index: 1;
+  font-size: 3vh;
+  color: white;
+  background-color: #1a1818;
+  width: 25.47252747252747vh;
+  height: 5.279434850863423vh;
+  position: absolute;
+  bottom: 45.62305295950156vh;
+
+  border: 1px solid white;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.signUpBox .signUpName {
+  z-index: 1;
+  font-size: 3vh;
+  color: white;
+  background-color: #1a1818;
+  width: 25.47252747252747vh;
+  height: 5.279434850863423vh;
+  position: absolute;
+  bottom: 60.62305295950156vh;
+
+  border: 1px solid white;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.signUpBox .signUpEmail::placeholder {
+  font-size: 3;
+  text-align: center;
+  color: rgb(170, 170, 170);
+}
+.signUpBox .signUpName::placeholder {
+  font-size: 3;
+  text-align: center;
+  color: rgb(170, 170, 170);
+}
+
+.signUpBox .signUpPassword {
+  z-index: 1;
+  width: 175px;
+  width: 25.47252747252747vh;
+  font-size: 3vh;
+  height: 5.279434850863423vh;
+  color: rgb(255, 255, 255);
+  background-color: #1a1818;
+  position: absolute;
+  bottom: 30.82182103610675vh;
+
+  border: 1px solid white;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.signUpBox .signUpPassword::placeholder {
+  font-size: 3vh;
+  text-align: center;
+  color: rgb(170, 170, 170);
+}
+
+.signUpBox a {
+  z-index: 1;
+  font-size: 3vh;
+  color: white;
+  transition: color 0.7s ease;
+  position: absolute;
+  bottom: 2.924646781789639vh;
+  text-decoration: none;
+}
+
+.signUpBox a:hover {
+  color: dodgerblue;
+}
+
+.signUpBox::before {
+  content: "";
+  position: absolute;
+  width: 27.56508422664625vh;
+  height: 130%;
+  background: linear-gradient(#00ccff, #d500f9);
+  animation: signUpRotate 4s linear infinite;
+}
+
+.signUpBox::after {
+  content: "";
+  position: absolute;
+  background: #1a1818;
+  inset: 0.8176049766718507vh;
+  border-radius: 15px;
+}
+
+@keyframes signUpRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.signUpButton {
+  position: absolute;
+  bottom: 14.193940345368917vh;
+
+  padding: 16px 30px;
+  font-size: 1rem;
+  color: #1e9bff;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: 0.5s;
+  z-index: 1;
+  background: 0;
+}
+.signUpButton:hover {
+  color: white;
+
+  border: 2px solid rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0px #1e9bff;
+}
+.signUpButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1e9bff;
+  z-index: -1;
+  transform: scale(0);
+  transition: 0.5s;
+}
+.signUpButton:hover::before {
+  transform: scale(1);
+  transition-delay: 0.5s;
+  box-shadow: 0 0 10px #1e9bff, 0 0 30px #1e9bff, 0 0 60px #1e9bff;
+}
+.signUpButton span {
+  position: absolute;
+  background: #1e9bff;
+  pointer-events: none;
+  border-radius: 2px;
+  box-shadow: 0 0 10px #1e9bff, 0 0 20px#1e9bff, 0 0 30px #1e9bff,
+    0 0 50px #1e9bff, 0 0 100px #1e9bff;
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.25s;
+}
+.signUpButton:hover span {
+  opacity: 0;
+  transition-delay: 0s;
+}
+.signUpButton span:nth-child(1),
+.signUpButton span:nth-child(3) {
+  width: 40px;
+  height: 4px;
+}
+.signUpButton:hover span:nth-child(1),
+.signUpButton:hover span:nth-child(3) {
+  transform: translateX(0);
+}
+.signUpButton span:nth-child(2),
+.signUpButton span:nth-child(4) {
+  width: 4px;
+  height: 40px;
+}
+.signUpButton:hover span:nth-child(1),
+.signUpButton:hover span:nth-child(3) {
+  transform: translateY(0);
+}
+.signUpButton span:nth-child(1) {
+  top: calc(50% - 2px);
+  left: -50px;
+  transform-origin: left;
+}
+.signUpButton:hover span:nth-child(1) {
+  left: 50%;
+}
+.signUpButton span:nth-child(3) {
+  top: calc(50% - 2px);
+  right: -50px;
+  transform-origin: right;
+}
+.signUpButton:hover span:nth-child(3) {
+  right: 50%;
+}
+.signUpButton span:nth-child(2) {
+  left: calc(50% - 2px);
+  top: -50px;
+  transform-origin: top;
+}
+.signUpButton:hover span:nth-child(2) {
+  top: 50%;
+}
+.signUpButton span:nth-child(4) {
+  left: calc(50% - 2px);
+  bottom: -50px;
+  transform-origin: bottom;
+}
+.signUpButton:hover span:nth-child(4) {
+  bottom: 50%;
+}
